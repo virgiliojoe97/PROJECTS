@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+<p></p>
+
+<script type="text/javascript">
+
+    var regex = /is/;
+
+    var string = "Regex is great!";
+
+    var result = string.match(regex);
+
+    //alert(result;)
+
+        $.get("info.txt", function(data){
+        alert(data);
+    })
+    //oppure
+    //oppure dire al sistema quando la chiamata fallisce
+    $.ajax("info.txt").done(function(data){
+        $("p").html(data);
+    }).fail(function(){
+        alert("Could not get data");
+    })
+   
+
+
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>

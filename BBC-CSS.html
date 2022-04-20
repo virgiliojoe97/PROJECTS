@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC-news-page</title>
+
+<style>
+    #topbar{
+        background-color: white;
+        width: 1000px;
+        margin: auto;
+        height: 48px;
+    }
+    body{
+        margin: 0;
+        padding 0
+        }
+   #brabus{
+       margin-top: 7px;
+       float: left;
+   }
+   .topbar-section{
+       float: left;
+       border-left: 1px grey solid;
+       height: 100%;
+       margin-left: 7px;
+   }
+   #brabus2{
+       width: 30px;
+       margin: 13px;
+       float: left;
+   }
+   #signin-text{
+       font-weight: bold;
+       font-size: 90%;
+       position: relative;
+       top: 14px;
+       padding-right: 50px;
+   }
+   .topbar-section{
+       float: left;
+       border-right: 1px;
+       height: 48px;
+    }
+    #brabus3{
+        width: 40px;
+        margin: 10px;
+        float: left;
+    }
+    .topbar-section{
+        float: left;
+        border-right: 1px;
+        height: 48px;
+        margin-right: 9px;
+    }
+    .topbar-menu {
+        font-weight: bold;
+        font-size: 90%;
+        padding: 13px 15px 0 15px;
+        height: 35px;
+    }
+    #freccia{
+        width: 10px;
+        margin-left: 20px;
+    }
+    #search-box{
+        background-color: grey;
+        border: none;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 10px;
+        float: left;
+        margin-right: -9px;
+    }
+    #brabus4{
+        width: 20px;
+        margin-top: 10px;
+        height: 27px;
+        }
+    .clear{
+    clear: both;
+    }
+    #menu-bar-container{
+        border-top: 1px grey solid;
+        background-color: red;
+        width: 100%;
+        height: 70px;
+        justify-content: center;
+        display: flex;
+    }
+    #menu-bar{
+        width: 1000px;
+        color: white;
+    }
+    h1{
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+        font-weight: normal;
+        padding-top: 10px;
+        float: left;
+        
+    }
+    #local-news{
+        margin-top: 20px;
+        border: 1px grey solid;
+        float: right;
+        width: 180px;
+        padding: 5px 5px 30px 30px;
+        margin-bottom: 25px;
+
+
+        
+    }
+    #local-news a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        bottom: 8px;
+
+
+
+    }
+    #local-news a:hover{
+        text-decoration: underline;
+    }
+    #local-news img{
+        width: 40px;
+        margin-top: -1px;
+
+    }
+    #menu-bar-2-container{
+        background-color: rgb(124, 12, 12);
+        width: 100%;
+
+    }
+    #menu-bar-2{
+        width: 1000px;
+        margin: 0 auto;
+        height: 35px;
+    }
+    #menu-bar-2 a{
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+        border-right: 1px grey solid;
+        font-size: 14px;
+        position: relative;
+        top: 9px;
+    }
+    #freccia2{
+        width: 10px;
+        margin-left: 20px;
+    }
+    #menu-bar-2 a:hover{
+        text-decoration: underline;
+    }
+    .no-border{
+        border: none
+    }
+    #page-container{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    h2{
+        color: black;
+        font-weight: normal;
+        margin-top: 40px;
+        border-bottom: 2px solid red;
+        width: 113px;
+    }
+    h3 a {
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+
+    }
+    h3 a:hover{
+        color: blue;
+    }
+  
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+<div id="topbar">
+<img id="brabus" width="50px"  src="immagini/immagine1.png" alt="">
+<div id="signin-div" class="topbar-section">
+<img id="brabus2" src="immagini/immagine1.png" alt="">
+<span id="signin-text">Signin</span> 
+</div>
+<div class="topbar-section"></div>
+<img id="brabus3" src="immagini/immagine1.png" alt="">
+<div class="topbar-section topbar-menu">Sports</div>
+<div class="topbar-section topbar-menu">Weather</div>
+<div class="topbar-section topbar-menu">iPlayer</div>
+<div class="topbar-section topbar-menu">TV</div>
+<div class="topbar-section topbar-menu">More <img src="immagini/frecia.png" alt="" id="freccia"> </div>
+<div  class="topbar-section"><input id="search-box" type="text" value="Search"></div>
+<div  value="Search"></div>
+<div><img id="brabus4" src="immagini/immagine1.png" alt=""></div>
+</div>
+
+<div class="clear"></div>
+<div id="menu-bar-container"><div id="menu-bar"><h1>NEWS</h1></div><div id="local-news"> <a href="">Find local news</a> <img src="immagini/immagine1.png" alt=""></div>
+</div>
+<div id="menu-bar-2-container">
+<div id="menu-bar-2">
+    <a href="">Home</a>
+    <a href="">UK</a>
+    <a href="">World</a>
+    <a href="">Business</a>
+    <a href="">Tech</a>
+    <a href="">Science</a>
+    <a href="">Health</a>
+    <a href="">Politics</a>
+    <a href="">Education</a>
+    <a href="">Entertainment & Arts</a>
+    <a href="">Video & Audio</a>
+    <a class="no-border" href="">More <img id="freccia2" src="immagini/frecia.png" alt=""></a>
+
+
+    <div class="clear"></div>
+<div id="page-container"></div>
+<div id="main-article">
+
+    <h2>Technology</h2>
+<h3>
+    <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing</a>
+</h3>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

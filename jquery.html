@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+<style>
+
+    #circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
+        margin: 10px;
+    }
+
+.square{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 10px;
+}
+
+</style>
+
+<style type="text/css">
+
+#hiddenText {
+    display: none;
+}
+
+</style>
+
+</head>
+<body>
+
+    <div id="circle"></div>
+
+    <div class="square"></div>
+
+    <iframe src="http://www.cnn.com" frameborder="0"></iframe>
+
+<p id="text">This is some text!</p>
+
+<button id="toggle"> Toggle text</button>
+
+<p>This is some text 2</p>
+
+<button id="fadeOut">Fade out text</button>
+
+<p id="hiddenText">This text will be hidden initially.</p>
+
+<button id="fadeIn">Fade In Text</button>
+    
+<script type="text/javascript" src="jquery.min.js">
+
+
+$("#circle").click(function() {
+    alert("div was clicked!")
+    $("p").html("This text has changed!");
+    alert($("p").html();
+    alert($("#circle").css("background-color", "red"));
+    $("#circle").css("width", "400px");
+    alert($("body").css("width"));
+});
+
+$(".square").hover(function(){
+        alert$("p").html());
+        $("iframe").attr("src","https://www.ecowebhosting.co.uk")
+});
+
+$("div").click(function(){
+    $("this").css("display", "none");
+    alert("You clicked on a" + $(this).attr("id")); 
+    if ($(this).attr("id") == "circle") {
+        alert ("You clicked on a circle");
+    } else{
+        alert("You clicked on a square")
+})
+
+$(this).fadeOut("slow", function(){
+    alert("FadeOut has finished!");
+});
+
+$("#fadeOut").click(function(){
+    $("p").fadeOut();
+
+    $("#text").fadeOut();
+})
+
+$("#fadeIn").click(function() {
+    $("#hiddenText").fadeIn();
+
+})
+
+var textShowing = true
+
+$("#toggle").click(function() {
+    if (textShowing) {
+        $("#text").fadeOut(function() {
+            textShowing = false;
+        });        
+    } else {
+    $("#text").fadeIn(function) {
+        textShowing = true;
+    });   
+    }
+    
+})
+
+$("#circle").click(function(){
+    alert(!clicked!);
+    $(this).animate({
+        width: "400px", 
+        height:"400px",
+        marginLeft:"100px"
+        marginTop: "100px"
+    }, 2000, function() {
+        $(this).css("background-color", "red");
+    })
+})
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

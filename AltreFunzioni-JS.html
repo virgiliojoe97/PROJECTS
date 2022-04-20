@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+function sum(a,b){
+    return(a+b)
+}
+
+function execute(func){
+    func(2,3)
+    console.log(func(4,6))
+
+}
+
+execute(sum);
+
+const arrowSum = (a,b) => a+b;
+const square = param1 => param1+param1;
+const square2 = (a,b) => {
+    return (a+b)
+}
+function sumall(a,b ...params){
+    //return params.reduce(sum);
+    return params.reduce((square);
+}
+
+const result = sumall(4,5,6)
+console.log(result)
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

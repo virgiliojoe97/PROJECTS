@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+
+
+
+
+
+</head>
+<body>
+
+
+<p id="text">Hello World</p>
+
+<button id="mybutton">Change text</button>
+
+<p id="second-paragraph">Javascript is...</p>
+
+<button id="my-second-button">change text2</button>
+
+<p id="third-paragraph">I think Javascript is...</p>
+
+<button id="my-third-button">append text</button>
+
+<p id="fourth-paragraph"></p>
+
+<button id="my-fourth-button">append text2</button>
+
+<p id="more-text">This is some text</p>
+
+<button id="style-text">Style Text</button>
+
+<p id="more-text2">This is some text2</p>
+
+<button id="style-text2"> Style Text2</button>
+
+<p id="disappeared">This text disappear</p>
+
+<button id="text-disappear">text disappear</button>
+
+
+
+
+
+
+
+<script type="text/javascript">
+    // commento inline
+    /* commento multiline*/
+    alert("page is loaded");
+
+document.getElementById("mybutton").onclick = function() {
+alert("Button clicked!");
+document.getElementById("text").innerHTML = "<h1>Hello Joe!</h1>";  
+}
+document.getElementById("my-second-button").onclick = function() { 
+document.getElementById("second-paragraph").innerHTML = document.getElementById("second-paragraph").innerHTML + "awsome!"
+}
+document.getElementById("my-third-button").onclick = function() {
+    document.getElementById("third-paragraph").innerHTML = document.getElementById("third-paragraph").innerHTML + "awsome!"
+}
+document.getAnimations("my-fourth-button").onclick = function() {
+    document.getElementById("fourth-paragraph").innerHTML = "text is appeared!"
+}
+document.getElementById("style-text").onclick = function() {
+    document.getElementById("more-text").style.color = "red"
+}
+document.getElementById("style-text2").onclick = function() {
+    document.getElementById("more-text2").style.fontSize = "50px"
+}
+document.getElementById("text-disappear").onclick = function() {
+    document.getElementById("disappeared").style.display = "none"
+}
+
+var age = 46;
+alert(age);
+var ageinTwoYears = age +2;
+console.log(ageinTwoYears);
+
+//Let e const
+
+const PI = 3.1415;
+//PI = 2.718
+
+{
+    let myname = "Joe"
+}
+console.log(myname)
+
+//pizza, chocolate, icecream, pasta
+const cibo1 = "pizza";
+constc cibo2 = pasta;
+
+let favoriteFood = new Array(10);
+console.log(favoriteFood)
+console.log(favoriteFood.length)
+
+let favoritefood2 = [];
+console.log(favoriteFood2)
+console.log(favoriteFood2.length)
+
+favoriteFood = new Array("pizza,icecream, pasta");
+favoriteFood = new Array["pizza,icecream, pasta"];
+
+console.log(favoriteFood);
+console.log(favoriteFood.length)
+console.log(favoriteFood2);
+console.log(favoriteFood2.length)
+
+//adding elements
+
+favoriteFood.push("gnocchi")
+
+console.log(favoriteFood);
+console.clear();
+console.log(favoriteFood[0]);
+
+const lastFood = favoriteFood.pop();
+console.log(lastFood)
+console.log(favoriteFood);
+
+favoriteFood.unshift("gnocchi")
+
+console.log(lastFood)
+console.log(favoriteFood);
+favoriteFood.shift();
+console.log(favoriteFood);
+
+console.log(favoriteFood);
+
+favoriteFood.splice(2,0,'lasagna')
+console.log(favoriteFood);
+favoriteFood.splice(2,1,'meat')
+console.log(favoriteFood);
+
+favoriteFood.forEach(function(ele){
+    console.log("ffod = " + ele)
+});
+
+//bolean(valore vero o falso)
+
+let canDrinkBeer = false
+letisAStudent = true
+
+// ==(confrontare due valore) >= <= !=(valore diverso) ||(oppure) &&(confronto) 
+// ===( confronto strettamente uguale) ==!(strettamente diversi)
+
+console.log(5 == 6);
+console.log(5 <= 6);
+
+console.log(canDrinkBeer || isAStudent);
+console.log(canDrinkBeer && isAStudent);
+
+console.log(!canDrinkBeer && isAStudent);
+
+// ""; 0; false; null; undefined (il risultato è falso qualsiasi altra cosa è true) else (se questo non è vero)
+
+if("name"){
+console.log("it is true");
+} else{
+    console.log("It is not true")
+}
+
+if(!canDrinkBeer && isAStudent)(
+    alert("you can get in")
+) else{
+    alert("you cannot get in")
+}
+
+const age = 22;
+if(age<6){
+    alert("you are not in primary")
+} else if(age>=6 && age <12){
+    alert("you are in secondary school")
+} else if(age>=12 && age<18){
+    alert("you are in senior high")
+} else {
+    alert("you finished compulsory school")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<h1>How old are you?</h1>
+<form action="">
+    <input type="number" name="age" id="age" min="1" max="130">
+    <button id="send">Invia</button> 
+</form>
+
+<script>
+    document.getElementById("send").onclick = function(){
+        const age = document.getElementById("age").value;
+        alert(age);
+        if(age < 6){
+        alert("you are not in primary")
+} else if(age >=6 && age < 12){
+    alert("you are in secondary school")
+} else if(age >=12 && age <18){
+    alert("you are in senior high")
+} else {
+    alert("you finished compulsory school")
+}
+ }
+</script>
+
+
+
+    
+
+
+
+
+
+
+</body>
+</html>
